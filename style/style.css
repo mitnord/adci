@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-family: 'Playfair';
+}
+
+.container {
+  max-width: 1280px;
+  /*width: 100%;*/
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #333333;
+  padding-bottom: 23px;
+}
+
+.header-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-left {
+  margin-top: 24px;
+}
+
+.header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5px;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 0;
+}
+
+.header-nav ul li {
+  list-style: none;
+  margin-right: 30px;
+  font-size: 18 px;
+}
+
+.header-nav ul li input {
+  display: none;
+}
+
+.header-nav ul li input:checked ~ nav {
+  top: 23px;
+}
+
+.header-nav ul li label {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.header-list {
+  position: relative;
+  top: -230px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #000;
+  margin-top: 5px;
+  z-index: -1;
+}
+
+.header-list ul {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #333333;
+  padding: 10px 10px;
+}
+
+.header-list ul li {
+  width: 100%;
+  padding: 10px;
+}
+
+.header-list ul li:not(:last-child) {
+  border-bottom: 2px solid black;
+}
+
+.header-list ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.cabinet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.cabinet p {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.cabinet img {
+  margin-left: 11px;
+  color: #e2d1a6;
+}
+/*# sourceMappingURL=style.css.map */

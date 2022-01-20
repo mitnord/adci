@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: 'Playfair';
+}
+
+.container{
+    max-width: 1280px;
+    /*width: 100%;*/
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #333333;
+    padding-bottom: 23px;
+
+    &-flex{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &-left{
+        margin-top: 24px;
+    }
+
+    &-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5px;
+
+    }
+
+    &-nav{
+        display: flex;
+        justify-content: space-between;
+
+
+        & ul{
+            display: flex;
+            padding-bottom: 0;
+
+
+            & li{
+                list-style: none;
+                margin-right: 30px;
+                font-size: 18 px;
+
+                & input{
+                    display: none;
+
+                    &:checked ~ nav{
+                        top: 23px;
+                    }
+                }
+
+                & label{
+                    color: #ffffff;
+                    text-transform: uppercase;
+                
+                
+                }
+            }
+        }
+    }
+
+    &-list{
+
+        position: relative;
+        top: -230px;
+        transition: 0.5s;
+        background: #000;
+        margin-top: 5px;
+        z-index: -1;
+
+        & ul{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            background-color: #333333;
+            padding: 10px 10px;
+
+
+            & li{
+                width: 100%;
+                padding: 10px ;
+
+                &:not(:last-child){
+                    border-bottom: 2px solid black;
+                }
+
+                & a{
+                    text-decoration: none;
+                    color: #ffffff;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+}
+
+.cabinet{
+    display: flex;
+    justify-content: flex-end;
+
+
+
+    & p{
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-top: 3px;
+    }
+
+    & img{
+        margin-left: 11px;
+        color: #e2d1a6;
+    }
+}
+
